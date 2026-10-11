@@ -4,3 +4,4 @@ python-multipart>=0.0.9
 numpy
 opencv-python-headless
 pytest
+ultralytics
