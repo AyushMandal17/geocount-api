@@ -1,0 +1,130 @@
+module,option,metric,value,latency_s,notes
+counting,B YOLO full,exact_acc[1-10],0.333,0.02,n=15; mean_abs_err=1.6; yolo26n-obb.pt; conf=0.25
+counting,B YOLO full,exact_acc[11-50],0.067,0.02,n=15; mean_abs_err=5.7; yolo26n-obb.pt; conf=0.25
+counting,B YOLO full,exact_acc[51-100],0.0,0.02,n=15; mean_abs_err=16.7; yolo26n-obb.pt; conf=0.25
+counting,B YOLO full,exact_acc[100+],0.0,0.02,n=15; mean_abs_err=86.0; yolo26n-obb.pt; conf=0.25
+counting,C YOLO tiles,exact_acc[1-10],0.267,0.13,n=15; mean_abs_err=1.5; yolo26n-obb.pt; conf=0.25
+counting,C YOLO tiles,exact_acc[11-50],0.133,0.67,n=15; mean_abs_err=5.1; yolo26n-obb.pt; conf=0.25
+counting,C YOLO tiles,exact_acc[51-100],0.0,0.27,n=15; mean_abs_err=20.7; yolo26n-obb.pt; conf=0.25
+counting,C YOLO tiles,exact_acc[100+],0.0,1.59,n=15; mean_abs_err=41.2; yolo26n-obb.pt; conf=0.25
+counting,two-scale check,agreement,0.15,,share of windows where full and tiled counts match
+measurement,B geometry x GSD,median_rel_err[length],0.0483214483146392,,n=8; missed=7; best-overlap box matching
+measurement,B geometry x GSD,median_rel_err[area],0.1766531746603847,,n=10; missed=5; best-overlap box matching
+counting,"D SAM 3 untiled, thr=0.5",exact_acc[1-10],0.133,2.26,n=15; mean_abs_err=2.0; thr=0.5
+counting,"D SAM 3 untiled, thr=0.5",exact_acc[11-50],0.133,2.68,n=15; mean_abs_err=8.5; thr=0.5
+counting,"D SAM 3 untiled, thr=0.5",exact_acc[51-100],0.0,4.34,n=15; mean_abs_err=15.0; thr=0.5
+counting,"D SAM 3 untiled, thr=0.5",exact_acc[100+],0.0,3.63,n=15; mean_abs_err=195.7; thr=0.5
+counting,"D SAM 3 untiled, thr=0.3",exact_acc[1-10],0.067,2.27,n=15; mean_abs_err=5.3; thr=0.3
+counting,"D SAM 3 untiled, thr=0.3",exact_acc[11-50],0.067,2.62,n=15; mean_abs_err=11.4; thr=0.3
+counting,"D SAM 3 untiled, thr=0.3",exact_acc[51-100],0.067,4.51,n=15; mean_abs_err=17.4; thr=0.3
+counting,"D SAM 3 untiled, thr=0.3",exact_acc[100+],0.0,4.25,n=15; mean_abs_err=179.3; thr=0.3
+counting,"D SAM 3 tiled 1024 ov0.2, thr=0.3",exact_acc[1-10],0.133,5.54,n=15; mean_abs_err=6.7
+counting,"D SAM 3 tiled 1024 ov0.2, thr=0.3",exact_acc[11-50],0.0,5.76,n=15; mean_abs_err=12.3
+counting,"D SAM 3 tiled 1024 ov0.2, thr=0.3",exact_acc[51-100],0.0,6.66,n=15; mean_abs_err=49.1
+counting,"D SAM 3 tiled 1024 ov0.2, thr=0.3",exact_acc[100+],0.0,6.95,n=15; mean_abs_err=130.5
+counting,"D SAM 3 tiled 1024 ov0.0, thr=0.3",exact_acc[1-10],0.067,2.46,n=15; mean_abs_err=5.7
+counting,"D SAM 3 tiled 1024 ov0.0, thr=0.3",exact_acc[11-50],0.0,2.56,n=15; mean_abs_err=10.4
+counting,"D SAM 3 tiled 1024 ov0.0, thr=0.3",exact_acc[51-100],0.0,2.92,n=15; mean_abs_err=48.0
+counting,"D SAM 3 tiled 1024 ov0.0, thr=0.3",exact_acc[100+],0.0,3.06,n=15; mean_abs_err=146.3
+grounding,B SAM 3 by name (choose=all),acc@IoU0.5[all],0.073,0.62,n=150
+grounding,B SAM 3 by name (choose=all),acc@IoU0.5[single_or_multi=single],0.073,0.62,n=150
+grounding,B SAM 3 by name (choose=all),acc@IoU0.5[size_group=large],0.119,0.62,n=84
+grounding,B SAM 3 by name (choose=all),acc@IoU0.5[size_group=small],0.015,0.62,n=66
+grounding,B SAM 3 by name (choose=all),acc@IoU0.7[all],0.04,0.62,n=150
+grounding,B SAM 3 by name (choose=all),acc@IoU0.7[single_or_multi=single],0.04,0.62,n=150
+grounding,B SAM 3 by name (choose=all),acc@IoU0.7[size_group=large],0.06,0.62,n=84
+grounding,B SAM 3 by name (choose=all),acc@IoU0.7[size_group=small],0.015,0.62,n=66
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.5[all],0.1,0.62,n=150
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.5[single_or_multi=single],0.1,0.62,n=150
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.5[size_group=large],0.143,0.62,n=84
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.5[size_group=small],0.045,0.62,n=66
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.7[all],0.047,0.62,n=150
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.7[single_or_multi=single],0.047,0.62,n=150
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.7[size_group=large],0.06,0.62,n=84
+grounding,"B SAM 3 by name, choose=all, +fallback prompts",acc@IoU0.7[size_group=small],0.03,0.62,n=66
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.5[all],0.647,0.62,n=150; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.5[single_or_multi=single],0.647,0.62,n=150; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.5[size_group=large],0.619,0.62,n=84; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.5[size_group=small],0.682,0.62,n=66; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.7[all],0.367,0.62,n=150; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.7[single_or_multi=single],0.367,0.62,n=150; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.7[size_group=large],0.31,0.62,n=84; oracle uses GT
+grounding,"B SAM 3 + oracle choose (ceiling), +fallback prompts",acc@IoU0.7[size_group=small],0.439,0.62,n=66; oracle uses GT
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.5[all],0.427,0.021,n=150; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.5[single_or_multi=single],0.427,0.021,n=150; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.5[size_group=large],0.56,0.021,n=84; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.5[size_group=small],0.258,0.021,n=66; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.7[all],0.3,0.021,n=150; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.7[single_or_multi=single],0.3,0.021,n=150; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.7[size_group=large],0.405,0.021,n=84; oracle uses GT; non-DOTA classes = wrong
+grounding,"C YOLO26-OBB + oracle choose (ceiling), n=150",acc@IoU0.7[size_group=small],0.167,0.021,n=66; oracle uses GT; non-DOTA classes = wrong
+counting,"A Ask the VLM, plain prompt",exact_acc[1-10],0.533,1.61,"n=15; answered=15; mean_abs_err=1.5; Qwen3-VL-4B, max_pixels=1048576"
+counting,"A Ask the VLM, plain prompt",exact_acc[11-50],0.133,1.7,"n=15; answered=15; mean_abs_err=10.7; Qwen3-VL-4B, max_pixels=1048576"
+counting,"A Ask the VLM, plain prompt",exact_acc[51-100],0.0,1.71,"n=15; answered=15; mean_abs_err=34.1; Qwen3-VL-4B, max_pixels=1048576"
+counting,"A Ask the VLM, plain prompt",exact_acc[100+],0.0,1.76,"n=15; answered=15; mean_abs_err=174.5; Qwen3-VL-4B, max_pixels=1048576"
+counting,A Ask the VLM,exact_acc[1-10],0.467,1.96,"n=15; answered=11; mean_abs_err=1.8; Qwen3-VL-4B, max_pixels=1048576"
+counting,A Ask the VLM,exact_acc[11-50],0.2,1.99,"n=15; answered=11; mean_abs_err=5.7; Qwen3-VL-4B, max_pixels=1048576"
+counting,A Ask the VLM,exact_acc[51-100],0.0,1.98,"n=15; answered=7; mean_abs_err=31.4; Qwen3-VL-4B, max_pixels=1048576"
+counting,A Ask the VLM,exact_acc[100+],0.0,1.93,"n=15; answered=2; mean_abs_err=70.0; Qwen3-VL-4B, max_pixels=1048576"
+measurement,A Ask the VLM,median_rel_err[length],0.3733958959409222,2.06,"n=15; failed/null=0; outlined crop; Qwen3-VL-4B, max_pixels=1048576"
+measurement,A Ask the VLM,median_rel_err[area],0.877038625173996,2.19,"n=15; failed/null=0; outlined crop; Qwen3-VL-4B, max_pixels=1048576"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.5[all],0.467,0.86,"n=150; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.5[single_or_multi=single],0.467,0.86,"n=150; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.5[size_group=large],0.452,0.86,"n=84; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.5[size_group=small],0.485,0.86,"n=66; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.7[all],0.26,0.86,"n=150; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.7[single_or_multi=single],0.26,0.86,"n=150; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.7[size_group=large],0.226,0.86,"n=84; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,"B SAM 3 by name, VLM chooses",acc@IoU0.7[size_group=small],0.303,0.86,"n=66; Qwen3-VL-4B, max_pixels=1048576; unknown/failed scored as no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.5[all],0.327,0.48,"n=150; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.5[single_or_multi=single],0.327,0.48,"n=150; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.5[size_group=large],0.429,0.48,"n=84; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.5[size_group=small],0.197,0.48,"n=66; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.7[all],0.24,0.48,"n=150; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.7[single_or_multi=single],0.24,0.48,"n=150; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.7[size_group=large],0.333,0.48,"n=84; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,C YOLO26-OBB boxes + VLM chooses,acc@IoU0.7[size_group=small],0.121,0.48,"n=66; Qwen3-VL-4B, max_pixels=1048576; non-DOTA classes = no boxes"
+grounding,A VLM box only (no SAM),acc@IoU0.5[all],0.193,5.23,"n=150; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.5[single_or_multi=single],0.193,5.23,"n=150; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.5[size_group=large],0.226,5.23,"n=84; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.5[size_group=small],0.152,5.23,"n=66; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.7[all],0.113,5.23,"n=150; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.7[single_or_multi=single],0.113,5.23,"n=150; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.7[size_group=large],0.143,5.23,"n=84; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box only (no SAM),acc@IoU0.7[size_group=small],0.076,5.23,"n=66; Qwen3-VL-4B, max_pixels=1048576; axis-aligned"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.5[all],0.173,8.64,"n=150; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.5[single_or_multi=single],0.173,8.64,"n=150; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.5[size_group=large],0.179,8.64,"n=84; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.5[size_group=small],0.167,8.64,"n=66; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.7[all],0.087,8.64,"n=150; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.7[single_or_multi=single],0.087,8.64,"n=150; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.7[size_group=large],0.095,8.64,"n=84; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,A VLM box -> SAM 3 -> rotated box,acc@IoU0.7[size_group=small],0.076,8.64,"n=66; Qwen3-VL-4B, max_pixels=1048576; sam_fallback_to_vlm_box=92"
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.5[all],0.213,1.69,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.5[single_or_multi=single],0.213,1.69,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.5[size_group=large],0.369,1.69,n=84; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.5[size_group=small],0.015,1.69,n=66; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.7[all],0.087,1.69,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.7[single_or_multi=single],0.087,1.69,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.7[size_group=large],0.155,1.69,n=84; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B all-in-one ([refer], with angle)",acc@IoU0.7[size_group=small],0.0,1.69,n=66; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.5[all],0.213,1.69,n=150; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.5[single_or_multi=single],0.213,1.69,n=150; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.5[size_group=large],0.369,1.69,n=84; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.5[size_group=small],0.015,1.69,n=66; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.7[all],0.087,1.69,n=150; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.7[single_or_multi=single],0.087,1.69,n=150; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.7[size_group=large],0.155,1.69,n=84; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([refer], angle ignored)",acc@IoU0.7[size_group=small],0.0,1.69,n=66; EarthDial-4B RGB; axis-aligned; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.5[all],0.233,1.72,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.5[single_or_multi=single],0.233,1.72,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.5[size_group=large],0.381,1.72,n=84; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.5[size_group=small],0.045,1.72,n=66; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.7[all],0.087,1.72,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.7[single_or_multi=single],0.087,1.72,n=150; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.7[size_group=large],0.155,1.72,n=84; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+grounding,"D EarthDial-4B ([grounding], with angle)",acc@IoU0.7[size_group=small],0.0,1.72,n=66; EarthDial-4B RGB; scale=100; angle folded to +-45; no_box=0
+counting,E EarthDial-4B all-in-one,exact_acc[1-10],0.4,1.57,n=15; answered=15; mean_abs_err=1.3; tiles=6; EarthDial-4B RGB
+counting,E EarthDial-4B all-in-one,exact_acc[11-50],0.067,1.61,n=15; answered=15; mean_abs_err=9.3; tiles=6; EarthDial-4B RGB
+counting,E EarthDial-4B all-in-one,exact_acc[51-100],0.0,1.58,n=15; answered=15; mean_abs_err=39.1; tiles=6; EarthDial-4B RGB
+counting,E EarthDial-4B all-in-one,exact_acc[100+],0.0,1.74,n=15; answered=15; mean_abs_err=147.0; tiles=6; EarthDial-4B RGB

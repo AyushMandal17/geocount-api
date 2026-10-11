@@ -1,0 +1,61 @@
+image_id,image_path,cls,group,gt_count,gsd
+P0019_4096_1679,/kaggle/working/windows/P0019_4096_1679.png,harbor,11-50,12,0.108079065446
+P0019_4525_1679,/kaggle/working/windows/P0019_4525_1679.png,harbor,11-50,13,0.108079065446
+P0060_0_0,/kaggle/working/windows/P0060_0_0.png,swimming pool,51-100,71,0.253888675686
+P0060_1451_0,/kaggle/working/windows/P0060_1451_0.png,swimming pool,51-100,64,0.253888675686
+P0060_1451_205,/kaggle/working/windows/P0060_1451_205.png,small vehicle,51-100,72,0.253888675686
+P0161_556_0,/kaggle/working/windows/P0161_556_0.png,plane,11-50,13,0.522362108613
+P0179_0_2494,/kaggle/working/windows/P0179_0_2494.png,small vehicle,11-50,22,0.139595726182
+P0179_2048_2494,/kaggle/working/windows/P0179_2048_2494.png,plane,11-50,30,0.139595726182
+P0262_0_390,/kaggle/working/windows/P0262_0_390.png,ship,100+,477,0.273420185264
+P0887_0_0,/kaggle/working/windows/P0887_0_0.png,small vehicle,11-50,22,0.13341356526
+P0887_0_716,/kaggle/working/windows/P0887_0_716.png,ship,100+,181,0.13341356526
+P0897_0_2048,/kaggle/working/windows/P0897_0_2048.png,ship,100+,669,0.269089113882
+P0897_283_2048,/kaggle/working/windows/P0897_283_2048.png,harbor,11-50,11,0.269089113882
+P0897_283_2980,/kaggle/working/windows/P0897_283_2980.png,ship,100+,478,0.269089113882
+P1075_0_1422,/kaggle/working/windows/P1075_0_1422.png,ship,100+,160,0.280259174212
+P1075_115_1422,/kaggle/working/windows/P1075_115_1422.png,ship,100+,160,0.280259174212
+P1184_546_2048,/kaggle/working/windows/P1184_546_2048.png,plane,11-50,15,0.591560301867
+P1268_0_0,/kaggle/working/windows/P1268_0_0.png,bridge,1-10,1,1.0
+P1332_0_0,/kaggle/working/windows/P1332_0_0.png,bridge,1-10,1,1.0
+P1356_0_0,/kaggle/working/windows/P1356_0_0.png,ship,11-50,13,1.0
+P1384_0_2048,/kaggle/working/windows/P1384_0_2048.png,swimming pool,11-50,44,0.5202625011
+P1384_2048_2048,/kaggle/working/windows/P1384_2048_2048.png,plane,51-100,63,0.5202625011
+P1384_3816_0,/kaggle/working/windows/P1384_3816_0.png,roundabout,1-10,1,0.5202625011
+P1386_2048_0,/kaggle/working/windows/P1386_2048_0.png,ship,100+,115,0.13106080649
+P1386_2578_0,/kaggle/working/windows/P1386_2578_0.png,ship,51-100,84,0.13106080649
+P1390_0_0,/kaggle/working/windows/P1390_0_0.png,plane,11-50,17,0.259787013202
+P1390_4265_1050,/kaggle/working/windows/P1390_4265_1050.png,plane,51-100,62,0.259787013202
+P1397_0_1418,/kaggle/working/windows/P1397_0_1418.png,plane,51-100,89,0.258023920555
+P1397_2048_0,/kaggle/working/windows/P1397_2048_0.png,plane,51-100,74,0.258023920555
+P1397_2048_1418,/kaggle/working/windows/P1397_2048_1418.png,plane,51-100,56,0.258023920555
+P1397_4096_1418,/kaggle/working/windows/P1397_4096_1418.png,plane,51-100,66,0.258023920555
+P1397_6144_1418,/kaggle/working/windows/P1397_6144_1418.png,plane,51-100,59,0.258023920555
+P1429_0_0,/kaggle/working/windows/P1429_0_0.png,harbor,1-10,1,0.13692435515
+P1429_0_752,/kaggle/working/windows/P1429_0_752.png,ship,1-10,9,0.13692435515
+P1432_0_2048,/kaggle/working/windows/P1432_0_2048.png,ground track field,1-10,2,0.284865884922
+P1586_1952_0,/kaggle/working/windows/P1586_1952_0.png,roundabout,1-10,1,0.72
+P1672_0_2048,/kaggle/working/windows/P1672_0_2048.png,harbor,1-10,3,0.72
+P1786_1285_1619,/kaggle/working/windows/P1786_1285_1619.png,harbor,1-10,4,0.228479786271
+P1809_4096_2048,/kaggle/working/windows/P1809_4096_2048.png,roundabout,1-10,1,0.202347000518
+P1854_2048_0,/kaggle/working/windows/P1854_2048_0.png,large vehicle,1-10,5,0.192091816413
+P2271_0_1238,/kaggle/working/windows/P2271_0_1238.png,large vehicle,11-50,29,0.568724078092
+P2285_1541_0,/kaggle/working/windows/P2285_1541_0.png,ship,51-100,53,0.295984439271
+P2404_3441_2048,/kaggle/working/windows/P2404_3441_2048.png,bridge,1-10,2,0.559615703388
+P2598_0_6,/kaggle/working/windows/P2598_0_6.png,large vehicle,1-10,3,0.113068841441
+P2608_0_0,/kaggle/working/windows/P2608_0_0.png,small vehicle,100+,110,0.122617438543
+P2608_38_403,/kaggle/working/windows/P2608_38_403.png,small vehicle,100+,106,0.122617438543
+P2625_2235_495,/kaggle/working/windows/P2625_2235_495.png,large vehicle,51-100,68,0.10660573807
+P2645_2557_0,/kaggle/working/windows/P2645_2557_0.png,storage tank,51-100,98,0.413369131444
+P2689_2048_0,/kaggle/working/windows/P2689_2048_0.png,plane,11-50,15,0.498508408083
+P2695_0_298,/kaggle/working/windows/P2695_0_298.png,storage tank,100+,428,1.06167898106
+P2709_0_0,/kaggle/working/windows/P2709_0_0.png,storage tank,100+,129,0.283767057345
+P2709_0_366,/kaggle/working/windows/P2709_0_366.png,storage tank,100+,101,0.283767057345
+P2709_942_0,/kaggle/working/windows/P2709_942_0.png,storage tank,100+,130,0.283767057345
+P2709_942_366,/kaggle/working/windows/P2709_942_366.png,storage tank,100+,103,0.283767057345
+P2724_0_0,/kaggle/working/windows/P2724_0_0.png,bridge,1-10,3,2.239491769
+P2726_0_554,/kaggle/working/windows/P2726_0_554.png,ship,100+,243,0.2639393521
+P2758_0_0,/kaggle/working/windows/P2758_0_0.png,storage tank,1-10,3,0.280869328239
+P2778_566_1310,/kaggle/working/windows/P2778_566_1310.png,plane,11-50,12,0.230030022602
+P2781_1507_0,/kaggle/working/windows/P2781_1507_0.png,large vehicle,51-100,78,0.105968675275
+P2789_2606_2449,/kaggle/working/windows/P2789_2606_2449.png,ship,11-50,32,0.10293325277
