@@ -78,9 +78,11 @@ def test_bad_inputs(monkeypatch):
     r = c.post("/api/count", files={"image": ("a.png", _png(), "image/png")}, data={"conf": "0.01"})
     assert r.status_code == 422
 
+
 def test_imgsz_option(monkeypatch):
     c = client(monkeypatch)
-    r = c.post("/api/count", files={"image": ("a.png", _png(), "image/png")}, data={"imgsz": "480"})
+    f = {"image": ("a.png", _png(), "image/png")}
+    r = c.post("/api/count", files=f, data={"imgsz": "480"})
     assert r.status_code == 200 and r.json()["settings"]["imgsz"] == 480
     r = c.post("/api/count", files={"image": ("a.png", _png(), "image/png")}, data={"imgsz": "100"})
     assert r.status_code == 422
