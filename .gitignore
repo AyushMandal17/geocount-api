@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 *.pt
 .env
+out*.jpg
+out.json
+test_scale/
+scale_model.py
